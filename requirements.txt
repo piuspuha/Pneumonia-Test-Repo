@@ -3,3 +3,4 @@ tensorflow == 2.18.0
 requests
 Pillow
 numpy
+gdown
