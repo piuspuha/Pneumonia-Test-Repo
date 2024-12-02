@@ -5,6 +5,7 @@ import numpy as np
 import os
 import requests
 import gdown
+import random
 
 #Temporary Downloaded Files Folder
 TEMP_DIR = "temp_images"
