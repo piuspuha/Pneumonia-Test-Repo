@@ -114,7 +114,14 @@ elif menu == "Visualisasi":
     st.title("Google Drive Dynamic Image Viewer")
 
     # Input: Google Drive folder ID
-    folder_id = st.text_input("Enter Google Drive Folder ID:")
+    folder_select = st.sidebar.selectbox("Jenis X-Ray", ["Normal", "Penumonia"])
+
+    if folder_select == "Normal":
+        folder_id = "1DAyMmkAiPm9zVGy0K0_BnAeQxDNbl76X"
+    elif folder_select == "Penumonia":
+        folder_id = "1ESKX8q_7uMSf65yx_Q3SyopPbwZrmZy3"
+
+    # folder_id = st.text_input("Enter Google Drive Folder ID:")
     num_images = st.number_input("Number of images to display (fixed):", min_value=1, max_value=20, value=6)
 
     if st.button("Show Random Images"):
